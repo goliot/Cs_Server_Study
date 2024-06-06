@@ -4,6 +4,7 @@ using System.Text;
 
 namespace ServerCore
 {
+    //Session의 사후 처리 담당
     class GameSession : Session
     {
         public override void OnConnected(EndPoint endPoint)
