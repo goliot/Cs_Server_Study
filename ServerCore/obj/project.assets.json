@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sumin\\source\\repos\\Rookiss_Server\\ServerCore\\ServerCore.csproj",
+      "projectUniqueName": "C:\\Users\\sumin\\source\\repos\\Rookiss_Server\\Cs_Server_Study\\ServerCore\\ServerCore.csproj",
       "projectName": "ServerCore",
-      "projectPath": "C:\\Users\\sumin\\source\\repos\\Rookiss_Server\\ServerCore\\ServerCore.csproj",
+      "projectPath": "C:\\Users\\sumin\\source\\repos\\Rookiss_Server\\Cs_Server_Study\\ServerCore\\ServerCore.csproj",
       "packagesPath": "C:\\Users\\sumin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sumin\\source\\repos\\Rookiss_Server\\ServerCore\\obj\\",
+      "outputPath": "C:\\Users\\sumin\\source\\repos\\Rookiss_Server\\Cs_Server_Study\\ServerCore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sumin\\AppData\\Roaming\\NuGet\\NuGet.Config",

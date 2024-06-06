@@ -12,3 +12,17 @@ C:\Users\sumin\source\repos\Rookiss_Server\DummyClient\obj\Debug\net6.0\refint\D
 C:\Users\sumin\source\repos\Rookiss_Server\DummyClient\obj\Debug\net6.0\DummyClient.pdb
 C:\Users\sumin\source\repos\Rookiss_Server\DummyClient\obj\Debug\net6.0\DummyClient.genruntimeconfig.cache
 C:\Users\sumin\source\repos\Rookiss_Server\DummyClient\obj\Debug\net6.0\ref\DummyClient.dll
+C:\Users\sumin\source\repos\Rookiss_Server\Cs_Server_Study\DummyClient\bin\Debug\net6.0\DummyClient.exe
+C:\Users\sumin\source\repos\Rookiss_Server\Cs_Server_Study\DummyClient\bin\Debug\net6.0\DummyClient.deps.json
+C:\Users\sumin\source\repos\Rookiss_Server\Cs_Server_Study\DummyClient\bin\Debug\net6.0\DummyClient.runtimeconfig.json
+C:\Users\sumin\source\repos\Rookiss_Server\Cs_Server_Study\DummyClient\bin\Debug\net6.0\DummyClient.dll
+C:\Users\sumin\source\repos\Rookiss_Server\Cs_Server_Study\DummyClient\bin\Debug\net6.0\DummyClient.pdb
+C:\Users\sumin\source\repos\Rookiss_Server\Cs_Server_Study\DummyClient\obj\Debug\net6.0\DummyClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sumin\source\repos\Rookiss_Server\Cs_Server_Study\DummyClient\obj\Debug\net6.0\DummyClient.AssemblyInfoInputs.cache
+C:\Users\sumin\source\repos\Rookiss_Server\Cs_Server_Study\DummyClient\obj\Debug\net6.0\DummyClient.AssemblyInfo.cs
+C:\Users\sumin\source\repos\Rookiss_Server\Cs_Server_Study\DummyClient\obj\Debug\net6.0\DummyClient.csproj.CoreCompileInputs.cache
+C:\Users\sumin\source\repos\Rookiss_Server\Cs_Server_Study\DummyClient\obj\Debug\net6.0\DummyClient.dll
+C:\Users\sumin\source\repos\Rookiss_Server\Cs_Server_Study\DummyClient\obj\Debug\net6.0\refint\DummyClient.dll
+C:\Users\sumin\source\repos\Rookiss_Server\Cs_Server_Study\DummyClient\obj\Debug\net6.0\DummyClient.pdb
+C:\Users\sumin\source\repos\Rookiss_Server\Cs_Server_Study\DummyClient\obj\Debug\net6.0\DummyClient.genruntimeconfig.cache
+C:\Users\sumin\source\repos\Rookiss_Server\Cs_Server_Study\DummyClient\obj\Debug\net6.0\ref\DummyClient.dll

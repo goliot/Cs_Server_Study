@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sumin\\source\\repos\\Rookiss_Server\\Server\\Server.csproj": {}
+    "C:\\Users\\sumin\\source\\repos\\Rookiss_Server\\Cs_Server_Study\\Server\\Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sumin\\source\\repos\\Rookiss_Server\\Server\\Server.csproj": {
+    "C:\\Users\\sumin\\source\\repos\\Rookiss_Server\\Cs_Server_Study\\Server\\Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sumin\\source\\repos\\Rookiss_Server\\Server\\Server.csproj",
+        "projectUniqueName": "C:\\Users\\sumin\\source\\repos\\Rookiss_Server\\Cs_Server_Study\\Server\\Server.csproj",
         "projectName": "Server",
-        "projectPath": "C:\\Users\\sumin\\source\\repos\\Rookiss_Server\\Server\\Server.csproj",
+        "projectPath": "C:\\Users\\sumin\\source\\repos\\Rookiss_Server\\Cs_Server_Study\\Server\\Server.csproj",
         "packagesPath": "C:\\Users\\sumin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sumin\\source\\repos\\Rookiss_Server\\Server\\obj\\",
+        "outputPath": "C:\\Users\\sumin\\source\\repos\\Rookiss_Server\\Cs_Server_Study\\Server\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sumin\\AppData\\Roaming\\NuGet\\NuGet.Config",
