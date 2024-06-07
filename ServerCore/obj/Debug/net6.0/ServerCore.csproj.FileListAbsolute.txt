@@ -12,9 +12,7 @@ C:\Users\sumin\source\repos\Rookiss_Server\ServerCore\obj\Debug\net6.0\refint\Se
 C:\Users\sumin\source\repos\Rookiss_Server\ServerCore\obj\Debug\net6.0\ServerCore.pdb
 C:\Users\sumin\source\repos\Rookiss_Server\ServerCore\obj\Debug\net6.0\ServerCore.genruntimeconfig.cache
 C:\Users\sumin\source\repos\Rookiss_Server\ServerCore\obj\Debug\net6.0\ref\ServerCore.dll
-C:\Users\sumin\source\repos\Rookiss_Server\Cs_Server_Study\ServerCore\bin\Debug\net6.0\ServerCore.exe
 C:\Users\sumin\source\repos\Rookiss_Server\Cs_Server_Study\ServerCore\bin\Debug\net6.0\ServerCore.deps.json
-C:\Users\sumin\source\repos\Rookiss_Server\Cs_Server_Study\ServerCore\bin\Debug\net6.0\ServerCore.runtimeconfig.json
 C:\Users\sumin\source\repos\Rookiss_Server\Cs_Server_Study\ServerCore\bin\Debug\net6.0\ServerCore.dll
 C:\Users\sumin\source\repos\Rookiss_Server\Cs_Server_Study\ServerCore\bin\Debug\net6.0\ServerCore.pdb
 C:\Users\sumin\source\repos\Rookiss_Server\Cs_Server_Study\ServerCore\obj\Debug\net6.0\ServerCore.GeneratedMSBuildEditorConfig.editorconfig
@@ -24,5 +22,4 @@ C:\Users\sumin\source\repos\Rookiss_Server\Cs_Server_Study\ServerCore\obj\Debug\
 C:\Users\sumin\source\repos\Rookiss_Server\Cs_Server_Study\ServerCore\obj\Debug\net6.0\ServerCore.dll
 C:\Users\sumin\source\repos\Rookiss_Server\Cs_Server_Study\ServerCore\obj\Debug\net6.0\refint\ServerCore.dll
 C:\Users\sumin\source\repos\Rookiss_Server\Cs_Server_Study\ServerCore\obj\Debug\net6.0\ServerCore.pdb
-C:\Users\sumin\source\repos\Rookiss_Server\Cs_Server_Study\ServerCore\obj\Debug\net6.0\ServerCore.genruntimeconfig.cache
 C:\Users\sumin\source\repos\Rookiss_Server\Cs_Server_Study\ServerCore\obj\Debug\net6.0\ref\ServerCore.dll

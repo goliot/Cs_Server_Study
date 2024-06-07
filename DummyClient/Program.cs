@@ -1,9 +1,56 @@
-﻿using System.Net;
+﻿using ServerCore;
+using System.Net;
 using System.Net.Sockets;
 using System.Text;
 
 namespace DummyClient
 {
+    class Packet
+    { //최대한 크기를 작게 보내자
+        public ushort size; //2 Byte
+        public ushort packetId;
+    }
+
+    class GameSession : Session
+    {
+        public override void OnConnected(EndPoint endPoint)
+        {
+            Console.WriteLine($"OnConnected : {endPoint}");
+
+            Packet packet = new Packet() { size = 4, packetId = 7 };
+
+            //보낸다
+            for (int i = 0; i < 5; i++)
+            {
+                ArraySegment<byte> openSegment = SendBufferHelper.Open(4096); //최조 덩어리 생성
+                byte[] buffer = BitConverter.GetBytes(packet.size);
+                byte[] buffer2 = BitConverter.GetBytes(packet.packetId);
+                Array.Copy(buffer, 0, openSegment.Array, openSegment.Offset, buffer.Length);
+                Array.Copy(buffer2, 0, openSegment.Array, openSegment.Offset + buffer.Length, buffer2.Length);
+                ArraySegment<byte> sendBuff = SendBufferHelper.Close(packet.size);
+
+                Send(sendBuff);
+            }
+        }
+
+        public override void OnDisConnected(EndPoint endPoint)
+        {
+            Console.WriteLine($"OnDisConnected : {endPoint}");
+        }
+
+        public override int OnRecv(ArraySegment<byte> buffer)
+        {
+            string recvData = Encoding.UTF8.GetString(buffer.Array, buffer.Offset, buffer.Count);
+            Console.WriteLine($"[From Server] {recvData}");
+            return buffer.Count;
+        }
+
+        public override void OnSend(int numOfBytes)
+        {
+            Console.WriteLine($"Transferrd bytes: {numOfBytes}");
+        }
+    }
+
     class Program
     {
         static void Main(string[] args)
@@ -14,33 +61,14 @@ namespace DummyClient
             IPAddress ipAddr = ipHost.AddressList[0];
             IPEndPoint endPoint = new IPEndPoint(ipAddr, 7777); //주소, 포트번호
 
+            Connector connector = new Connector();
+            connector.Connect(endPoint, () => { return new GameSession(); });
+
             while (true)
             {
-                //손님 휴대폰 설정
-                Socket socket = new Socket(endPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
-
                 try
                 {
-                    //문지기한테 입장 문의
-                    socket.Connect(endPoint);
-                    Console.WriteLine($"Connected To {socket.RemoteEndPoint.ToString()}");
 
-                    //보낸다
-                    for (int i = 0; i < 5; i++)
-                    {
-                        byte[] sendBuff = Encoding.UTF8.GetBytes($"Hello world! {i}");
-                        int sendBytes = socket.Send(sendBuff);
-                    }
-
-                    //받는다
-                    byte[] recvBuff = new byte[1024];
-                    int recvBytes = socket.Receive(recvBuff);
-                    string recvData = Encoding.UTF8.GetString(recvBuff, 0, recvBytes);
-                    Console.WriteLine($"[From Server] {recvData}");
-
-                    //나간다
-                    socket.Shutdown(SocketShutdown.Both);
-                    socket.Close();
                 }
                 catch (Exception e)
                 {

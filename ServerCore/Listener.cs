@@ -4,7 +4,7 @@ using System.Net.Sockets;
 namespace ServerCore
 {
     //Accept 담당
-    class Listener
+    public class Listener
     {
         Socket _listenSocket;
         Func<Session> _sessionFactory; //세션을 만들어 주는 것
