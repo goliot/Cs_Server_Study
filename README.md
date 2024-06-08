@@ -1,6 +1,10 @@
 # Cs_Server_Study
 ## C#으로 게임 서버 구현하기 공부
 ---
+### 0608
+https://goliot-coding.tistory.com/48
+
+---
 ### 0607
 https://goliot-coding.tistory.com/44  
 https://goliot-coding.tistory.com/46  
