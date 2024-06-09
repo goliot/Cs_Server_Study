@@ -1,4 +1,4 @@
-# Cs_Server_Study
+# Cs_Server_Study - Rookiss 서버 강의
 ## C#으로 게임 서버 구현하기 공부
 ---
 ### 0609
