@@ -6,6 +6,8 @@ namespace PacketGenerator
     class Program
     {
         static string genPackets; //새로 생길 cs파일의 소스코드가 string으로 저장됨
+        static ushort packetId;
+        static string packetEnums;
 
         static void Main(string[] args)
         {
@@ -28,7 +30,8 @@ namespace PacketGenerator
                     //Console.WriteLine(r.Name + " " + r["name"]);
                 }
 
-                File.WriteAllText("GenPackets.cs", genPackets); //생성된 string을 소스코드로 하는 cs 파일 생성
+                string fileText = string.Format(PacketFormat.fileFormat, packetEnums, genPackets);
+                File.WriteAllText("GenPackets.cs", fileText); //생성된 string을 소스코드로 하는 cs 파일 생성
             }
         }
 
@@ -53,6 +56,7 @@ namespace PacketGenerator
 
             Tuple<string, string, string> t = ParseMembers(r);
             genPackets += string.Format(PacketFormat.packetFormat, packetName, t.Item1, t.Item2, t.Item3);
+            packetEnums += string.Format(PacketFormat.packetEnumFormat, packetName, ++packetId) + Environment.NewLine + "\t";
         }
 
         // {1} 패킷의 멤버 변수
@@ -89,8 +93,13 @@ namespace PacketGenerator
                 string memberType = r.Name.ToLower();
                 switch (memberType)
                 {
-                    case "bool":
                     case "byte":
+                    case "sbyte":
+                        memberCode += string.Format(PacketFormat.memberFormat, memberType, memberName);
+                        readCode += string.Format(PacketFormat.readByteFormat, memberName, memberType);
+                        writeCode += string.Format(PacketFormat.writeByteFormat, memberName, memberType);
+                        break;
+                    case "bool":
                     case "short":
                     case "ushort":
                     case "int":

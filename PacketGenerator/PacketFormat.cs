@@ -2,6 +2,28 @@
 {
     class PacketFormat
     {
+        // {0} 패킷 이름 / 번호 목록
+        // {1} 패킷 목록
+        public static string fileFormat =
+@"using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Net;
+using ServerCore;
+
+public enum PacketID
+{{
+    {0}
+}}
+
+{1}
+";
+
+        // {0} 패킷 이름
+        // {1} 패킷 번호
+        public static string packetEnumFormat =
+@"{0} = {1},";
+
         // {0} 패킷 이름
         // {1} 패킷의 멤버 변수
         // {2} 멤버 변수 Read = readFormat, readStringFormat
@@ -55,21 +77,22 @@
         public static string memberListFormat =
 @"public class {0}
 {{
-	{2}
+    {2}
 
-	public void Read(ReadOnlySpan<byte> s, ref ushort count)
-	{{
-		{3}
-	}}
+    public void Read(ReadOnlySpan<byte> s, ref ushort count) 
+    {{
+        {3}
+    }}
 
-	public bool Write(Span<byte> s, ref ushort count)
-	{{
-		bool success = true;
-		{4}
-		return success;
-	}}	
+    public bool Write(Span<byte> s, ref ushort count)
+    {{
+        bool success = true;
+        {4}
+        return success;
+    }}
 }}
-public List<{0}> {1}s = new List<{0}>();";
+public List<{0}> {1}s = new List<{0}>();
+";
 
         // {0} 변수 이름
         // {1} To ~ 변수 형식
@@ -77,6 +100,13 @@ public List<{0}> {1}s = new List<{0}>();";
         public static string readFormat =
 @"this.{0} = BitConverter.{1}(s.Slice(count, s.Length - count));
 count += sizeof({2});";
+
+        // {0} 변수 이름
+        // {1} 변수 형식
+        public static string readByteFormat =
+@"this.{0} = ({1})segment.Array[segment.Offset + count];
+count += sizeof({1});
+";
 
         // {0} 변수 이름
         public static string readStringFormat =
@@ -102,6 +132,13 @@ for (int i = 0; i < {1}Len; i++)
         public static string writeFormat =
 @"success &= BitConverter.TryWriteBytes(s.Slice(count, s.Length - count), this.{0});
 count += sizeof({1});";
+
+        // {0} 변수 이름
+        // {1} 변수 형식
+        public static string writeByteFormat =
+@"segment.Array[segment.Offset + count] = (byte)this.{0};
+count += sizeof({1});
+";
 
         // {0} 변수 이름
         public static string writeStringFormat =
