@@ -1,6 +1,11 @@
 # Cs_Server_Study - Rookiss 서버 강의
 ## C#으로 게임 서버 구현하기 공부
 ---
+### 0612
+#### PacketGenerator 완성
+https://goliot-coding.tistory.com/53
+
+---
 ### 0611
 https://goliot-coding.tistory.com/52
 
