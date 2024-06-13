@@ -16,20 +16,22 @@ namespace DummyClient
             IPEndPoint endPoint = new IPEndPoint(ipAddr, 7777); //주소, 포트번호
 
             Connector connector = new Connector();
-            connector.Connect(endPoint, () => { return new ServerSession(); });
+            connector.Connect(endPoint, 
+                () => { return SessionManager.Instance.Generate(); },
+                100);
 
             while (true)
             {
                 try
                 {
-
+                    SessionManager.Instance.SendForEach();
                 }
                 catch (Exception e)
                 {
                     Console.WriteLine(e.ToString());
                 }
 
-                Thread.Sleep(100);
+                Thread.Sleep(250);
             }
         }
     }
