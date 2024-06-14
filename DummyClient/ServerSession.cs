@@ -1,7 +1,5 @@
 ﻿using ServerCore;
-using System;
 using System.Net;
-using System.Text;
 
 namespace DummyClient
 {

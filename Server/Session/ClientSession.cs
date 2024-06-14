@@ -1,10 +1,5 @@
 ﻿using ServerCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Server
 {
@@ -18,8 +13,7 @@ namespace Server
         {
             Console.WriteLine($"OnConnected : {endPoint}");
 
-            //TODO
-            Program.room.Enter(this);
+            Program.Room.Push(() => Program.Room.Enter(this));
         }
 
         public override void OnRecvPacket(ArraySegment<byte> buffer)
@@ -33,7 +27,8 @@ namespace Server
 
             if(Room != null)
             {
-                Room.Leave(this);
+                GameRoom room = Room;
+                room.Push(() => room.Leave(this));
                 Room = null;
             }
 
@@ -42,7 +37,7 @@ namespace Server
 
         public override void OnSend(int numOfBytes)
         {
-            Console.WriteLine($"Transferrd bytes: {numOfBytes}");
+            //Console.WriteLine($"Transferrd bytes: {numOfBytes}");
         }
     }
 }

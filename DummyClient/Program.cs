@@ -1,7 +1,5 @@
 ﻿using ServerCore;
 using System.Net;
-using System.Net.Sockets;
-using System.Text;
 
 namespace DummyClient
 {
@@ -18,7 +16,7 @@ namespace DummyClient
             Connector connector = new Connector();
             connector.Connect(endPoint, 
                 () => { return SessionManager.Instance.Generate(); },
-                100);
+                500);
 
             while (true)
             {

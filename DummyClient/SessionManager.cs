@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DummyClient
+﻿namespace DummyClient
 {
     class SessionManager
     {
@@ -24,7 +18,9 @@ namespace DummyClient
                     chatPacket.chat = $"Hello Server !";
                     ArraySegment<byte> segment = chatPacket.Write();
 
-                    session.Send(segment);
+                    List<ArraySegment<byte>> segmentList =  new List<ArraySegment<byte>>();
+                    segmentList.Add(segment);
+                    session.Send(segmentList);
                 }
             }
         }

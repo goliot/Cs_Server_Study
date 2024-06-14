@@ -1,11 +1,5 @@
 ﻿using Server;
 using ServerCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Sockets;
-using System.Text;
-using System.Threading.Tasks;
 
 class PacketHandler
 {
@@ -17,6 +11,8 @@ class PacketHandler
         if (clientSession == null)
             return;
 
-        clientSession.Room.Broadcast(clientSession, chatPacket.chat);
+        //잡큐에 broadcast 작업 넣기
+        GameRoom room = clientSession.Room;
+        room.Push(() => room.Broadcast(clientSession, chatPacket.chat));
     }
 }
