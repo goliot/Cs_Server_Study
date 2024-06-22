@@ -1,5 +1,10 @@
-﻿using System.Net;
+﻿using System;
+using System.Collections.Generic;
+using System.Net;
 using System.Net.Sockets;
+using System.Text;
+using System.Threading;
+
 
 namespace ServerCore
 {
@@ -90,6 +95,16 @@ namespace ServerCore
                     _sendQueue.Enqueue(sendBuff);
 
                 if (_pendingList.Count == 0) //1빠로 Send요청을하여 등록도 안된 경우
+                    RegisterSend();
+            }
+        }
+
+        public void Send(ArraySegment<byte> sendBuff)
+        {
+            lock (_lock)
+            {
+                _sendQueue.Enqueue(sendBuff);
+                if (_pendingList.Count == 0)
                     RegisterSend();
             }
         }
