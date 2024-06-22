@@ -1,6 +1,11 @@
 # Cs_Server_Study - Rookiss 서버 강의
 ## C#으로 게임 서버 구현하기 공부
 ---
+### 0622
+#### 유니티 연동 완료
+https://goliot-coding.tistory.com/57
+
+---
 ### 0616
 #### 유니티 연동
 https://goliot-coding.tistory.com/56
