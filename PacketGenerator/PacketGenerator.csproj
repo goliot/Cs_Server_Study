@@ -17,4 +17,8 @@
     <Optimize>False</Optimize>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.27.2" />
+  </ItemGroup>
+
 </Project>

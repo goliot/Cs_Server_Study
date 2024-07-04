@@ -16,3 +16,4 @@ C:\Users\sumin\source\repos\Rookiss_Server\Cs_Server_Study\Server\obj\Debug\net6
 C:\Users\sumin\source\repos\Rookiss_Server\Cs_Server_Study\Server\obj\Debug\net6.0\Server.pdb
 C:\Users\sumin\source\repos\Rookiss_Server\Cs_Server_Study\Server\obj\Debug\net6.0\Server.genruntimeconfig.cache
 C:\Users\sumin\source\repos\Rookiss_Server\Cs_Server_Study\Server\obj\Debug\net6.0\ref\Server.dll
+C:\Users\sumin\source\repos\Rookiss_Server\Cs_Server_Study\Server\bin\Debug\net6.0\Google.Protobuf.dll

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "tM3Dit4SmrQi2ZxZnS22UdS7aGN5uJoaXf5udEAGAq46gwjyu+auUIx8LXlJEY88fMQG8q/qZ5qcoa4FuMoJlA==",
+  "dgSpecHash": "3PGA7mSKliS4Gq0OO7rLRYtHADHWH0BVpyNaRFSP5qPfWHLo8okzgyTkgtRm5644bosMmNHg8hlLlrrhIOiLrg==",
   "success": true,
   "projectFilePath": "C:\\Users\\sumin\\source\\repos\\Rookiss_Server\\Cs_Server_Study\\PacketGenerator\\PacketGenerator.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\sumin\\.nuget\\packages\\google.protobuf\\3.27.2\\google.protobuf.3.27.2.nupkg.sha512"
+  ],
   "logs": []
 }

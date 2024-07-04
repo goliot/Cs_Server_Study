@@ -5,11 +5,9 @@ VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServerCore", "ServerCore\ServerCore.csproj", "{BE0B5EA7-B286-45E8-834B-620F8A8C715D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DummyClient", "DummyClient\DummyClient.csproj", "{1FD3FE2A-5DC9-46E7-859C-6FDE1C1E367F}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server", "Server\Server.csproj", "{E319C370-7CAB-404B-A8D2-8AEAFBEC3431}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PacketGenerator", "PacketGenerator\PacketGenerator.csproj", "{580B838E-0DBA-4358-A292-E3AA050DDC9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PacketGenerator", "PacketGenerator\PacketGenerator.csproj", "{580B838E-0DBA-4358-A292-E3AA050DDC9E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{C62012F3-79F7-427C-887B-4B4D9403C275}"
 EndProject
@@ -23,10 +21,6 @@ Global
 		{BE0B5EA7-B286-45E8-834B-620F8A8C715D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE0B5EA7-B286-45E8-834B-620F8A8C715D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE0B5EA7-B286-45E8-834B-620F8A8C715D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1FD3FE2A-5DC9-46E7-859C-6FDE1C1E367F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1FD3FE2A-5DC9-46E7-859C-6FDE1C1E367F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1FD3FE2A-5DC9-46E7-859C-6FDE1C1E367F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1FD3FE2A-5DC9-46E7-859C-6FDE1C1E367F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E319C370-7CAB-404B-A8D2-8AEAFBEC3431}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E319C370-7CAB-404B-A8D2-8AEAFBEC3431}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E319C370-7CAB-404B-A8D2-8AEAFBEC3431}.Release|Any CPU.ActiveCfg = Release|Any CPU

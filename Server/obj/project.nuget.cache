@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "FV1ZfDV+gK+FZ3xuoDTgdDi4VTz71f2WhHSBH5B5rVWoT1K1A3JpDymKfhtMQxVf3TwezPooe69R/aVVcudNCw==",
+  "dgSpecHash": "rFIzXK6U/M0w9sCwkoan7cvr3VsYy7o9jpFwA5euSPMczX78/jeRtcuOZHZemfvdL1qn+0PMNttqenkQUWeAuQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\sumin\\source\\repos\\Rookiss_Server\\Cs_Server_Study\\Server\\Server.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\sumin\\.nuget\\packages\\google.protobuf\\3.27.2\\google.protobuf.3.27.2.nupkg.sha512"
+  ],
   "logs": []
 }
